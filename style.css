@@ -18,13 +18,36 @@
 	margin:0px;
 	border-spacing: 0px;
 }
-.cell{
+.cellAbout{
 	border-bottom:1px solid #126234;
-	transition: border-bottom 1s;
 	width: 90%;
+	height:33.3%;
+	transition: border-bottom 1s, height 2s;
 }
 
-.cell:hover{
+.cellAbout:hover{
+	border-bottom:10px solid #126234;
+}
+
+.cellProjects{
+	border-bottom:1px solid #126234;
+	width: 90%;
+	height:33.3%;
+	transition: border-bottom 1s, height 2s;
+}
+
+.cellProjects:hover{
+	border-bottom:10px solid #126234;
+}
+
+.cellGames{
+	border-bottom:1px solid #126234;
+	width: 90%;
+	height:33.3%;
+	transition: border-bottom 1s, height 2s;
+}
+
+.cellGames:hover{
 	border-bottom:10px solid #126234;
 }
 
@@ -47,6 +70,9 @@
 	filter: grayscale(100%);
 	width:100px;
 	height:100px;
+	position:relative;
+	display:block;
+	transition:filter 0.5s;
 }
 
 .github{
@@ -71,23 +97,27 @@
 	filter: grayscale(0%);
 }
 
-a{
-	text-decoration:none;
-	color: gray;
+.about{
 	transition: color .5s;
 }
-a:visited{
-	text-decoration:none;
-	color: gray;
-}
-a:active{
-	text-decoration:none;
+.about:hover{
 	color: #126234;
 }
-a:link{
-	text-decoration:none;
-	color: gray;
+
+.projects{
+	transition: color .5s;
 }
-a:hover{
+.projects:hover{
 	color: #126234;
+}
+
+.games{
+	transition: color .5s;
+}
+.games:hover{
+	color: #126234;
+}
+
+.textAbout{
+	display:none;
 }
